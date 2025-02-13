@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f594; 
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(119, 117, 112);
+    margin: 1rem ;
+}
+h3 {
+    color: rgb(119, 117, 112);
+    text-align: center;
+    margin: 1rem ;
+}
+
+.lista-curriculos li {
+    list-style: none;
+    
+    margin: 5px;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.lista-curriculos li a {
+    color: black;
+    text-decoration: none;
+}
+.lista-curriculos li:hover {
+    background-color: #3f5f857a;     
+    cursor: pointer;
+
+}
+
+
+.item-curriculo{
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
