@@ -4,43 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {       
+
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f594;
+            align-items: center;
+        }
+
+        .header {
+            position: flex;
+            top: 0.2rem;
+            width: 100%;
+            height: 9rem;
+            background-color: hsla(213, 36%, 38%);
+            color: white;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            z-index: 10;
+        }
+
+        .item-curriculo {
+            position: relative;            
+            width: 46em;
+            left: calc(50% - 23em);
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1rem;
+            z-index: 1;   
+            margin: 0.7rem 0;         
+            margin-bottom: 2.5rem; 
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            margin: 0.5rem 0;
+        }
+
+        .lista-curriculos li {
+            list-style: none;
+            margin: 0.3rem 1rem;
+            padding: 0.3rem 10rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.5s, transform 0.3s;
+        }
+
+        .lista-curriculos li:hover {
+            background-color: #3f5f857a;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .lista-curriculos li a {
+            letter-spacing: 3px;
+            color: rgb(1, 1, 2);
+            text-decoration: none;
+        }
+
+        .footer {
+            position: fixed;
+            margin-top: 1rem;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: hsla(213, 36%, 38%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border: 1px solid #ccc;
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Currículos</h1>
-    <ul>
-        <li><a href="https://felixsouza.netlify.app/" target="_blank">Diego Felix de Souza</a></li>
-        <li><a href="https://github.com/thigiacobelli/Curriculo-HTML-CSS" target="_blank">Thiago Henrique Giacobelli</a></li>
-        <li><a href="https://github.com/elotassote/Curriculo" target="_blank">Eloiza de Morais Tassote</a></li>
-        <li><a href="https://github.com/VitorGH/curriculum-Des.Frame.lll" target="_blank">Vitor Barroso Rodrigues</a></li>
-        <li><a href="https://curriculo-khaki.vercel.app/" target="_blank">Vinícius Amirat dos Santos</a></li>
-        <li><a href="https://github.com/DevG0mes/Curriculo.git" target="_blank">Joao Felipe dos Santos Gomes</a></li>
-        <li><a href="https://github.com/evertondays/curriculo/" target="_blank">Everton de Souza Ribeiro Dias</a></li>      
-        <li><a href="https://github.com/Gssjoao/curriculojoao.git" target="_blank">João gabriel Silvestre de souza</a></li>
-        <li><a href="https://github.com/MateusNolasco/CurriculoMateus" target="_blank">Mateus Nolasco Oliveira Silva</a></li>
-        <li><a href="https://vicdu45.github.io/curriculo.html" target="_blank">Victoria Duran</a></li>
-        <li><a href="https://brunoalbosso.github.io/CurriculoDevFrameworkIII/" target="_blank">Bruno Alessandro Bosso Alves</a></li>
-        <li><a href="https://evertondays.github.io/curriculo/" target="_blank">Everton de Souza Ribeiro Dias</a></li>
-        <li><a href="https://github.com/NicolasRuzza/CurriculoDevFramework3" target="_blank">Nícolas Ruzza</a></li>
-        <li><a href="https://github.com/ryodan1/curriculo_Rafael_Caetano/tree/main/curriculo" target="_blank">Rafael Lopes Caetano</a></li>
-        <li><a href="https://github.com/Ro-vini/curriculo" target="_blank">Vinícius Eduardo Roveri</a></li>
-        <li><a href="https://github.com/kauvini1/meu_curriculo/blob/main/projeto_kaua.html" target="_blank">Kaua Vinicius Moreira Mariano Vaz</a></li>
-        <li><a href="https://igorcamaraanchieta.github.io/curriculo/" target="_blank">Igor da Rosa Câmara</a></li>
-        <li><a href="https://nicolasruzza.github.io" target="_blank">Nícolas Ruzza</a></li>
-        <li><a href="https://ro-vini.github.io" target="_blank">Vinícius Eduardo Roveri</a></li>
-        <li><a href="https://github.com/BrunoAlBosso/CurriculoDevFrameworkIII" target="_blank">Bruno Alessandro Bosso Alves</a></li>
-        <li><a href="https://leomartelli.github.io/curriculoframework3/" target="_blank">Leonardo Martelli</a></li>
-        <li><a href="https://fdestro.vercel.app/" target="_blank">Felipe Destro</a></li>
-        <li><a href="https://lucasmarujo.github.io/curriculo_14-02-25/" target="_blank">Lucas Marujo Amadeu</a></li>
-        <li><a href="https://www.giovannivicentin.com" target="_blank">Giovanni Vicentin</a></li>
-        <li><a href="ryancabral1.github.io" target="_blank">Ryan Augusto Cabral</a></li>
-        <li><a href="https://felipecruz12.github.io/" target="_blank">Felipe Matheus da Cruz</a></li>
-        <li><a href="https://martinsrossi.github.io" target="_blank">Renan Rossi</a></li>
-        <li><a href="https://rossze.github.io/NicolasPage/" target="_blank">Nicolas Rossetto Samblas</a></li>
-        <li><a href="https://caiohfcorreia.github.io/" target="_blank">Caio Henrique Fernande Correia</a></li>
-        <li><a href="https://portfolio-website-three-silk.vercel.app" target="_blank">Lucas Vilela Roveri</a></li>
-        <li><a href="https://mathdalabi.github.io/curriculo/curriculo.html" target="_blank">Matheus Henrique Melo Lima</a></li>
-        <li><a href="https://camilauniversidade.github.io/curriculo.github.io/" target="_blank">Camila Vieira Francatti</a></li>
-    </ul>
-     
+    <header class="header">
+        <h1>Currículos</h1>
+        <h3>Ciência da Computação</h3>
+        <h2>Alunos do Unianchieta</h2>
+    </header>
+    
+    <div class="item-curriculo">
+        <ul class="lista-curriculos">
+            <li><a href="https://felixsouza.netlify.app/" target="_blank">Diego Felix de Souza</a></li>
+            <li><a href="https://github.com/thigiacobelli/Curriculo-HTML-CSS" target="_blank">Thiago Henrique Giacobelli</a></li>
+            <li><a href="https://github.com/elotassote/Curriculo" target="_blank">Eloiza de Morais Tassote</a></li>
+            <li><a href="https://github.com/VitorGH/curriculum-Des.Frame.lll" target="_blank">Vitor Barroso Rodrigues</a></li>
+            <li><a href="https://curriculo-khaki.vercel.app/" target="_blank">Vinícius Amirat dos Santos</a></li>
+            <li><a href="https://github.com/DevG0mes/Curriculo.git" target="_blank">Joao Felipe dos Santos Gomes</a></li>
+            <li><a href="https://github.com/evertondays/curriculo/" target="_blank">Everton de Souza Ribeiro Dias</a></li>      
+            <li><a href="https://github.com/Gssjoao/curriculojoao.git" target="_blank">João gabriel Silvestre de souza</a></li>
+            <li><a href="https://github.com/MateusNolasco/CurriculoMateus" target="_blank">Mateus Nolasco Oliveira Silva</a></li>
+            <li><a href="https://vicdu45.github.io/curriculo.html" target="_blank">Victoria Duran</a></li>
+            <li><a href="https://brunoalbosso.github.io/CurriculoDevFrameworkIII/" target="_blank">Bruno Alessandro Bosso Alves</a></li>
+            <li><a href="https://evertondays.github.io/curriculo/" target="_blank">Everton de Souza Ribeiro Dias</a></li>
+            <li><a href="https://github.com/NicolasRuzza/CurriculoDevFramework3" target="_blank">Nícolas Ruzza</a></li>
+            <li><a href="https://github.com/ryodan1/curriculo_Rafael_Caetano/tree/main/curriculo" target="_blank">Rafael Lopes Caetano</a></li>
+            <li><a href="https://github.com/Ro-vini/curriculo" target="_blank">Vinícius Eduardo Roveri</a></li>
+            <li><a href="https://github.com/kauvini1/meu_curriculo/blob/main/projeto_kaua.html" target="_blank">Kaua Vinicius Moreira Mariano Vaz</a></li>
+            <li><a href="https://igorcamaraanchieta.github.io/curriculo/" target="_blank">Igor da Rosa Câmara</a></li>
+            <li><a href="https://nicolasruzza.github.io" target="_blank">Nícolas Ruzza</a></li>
+            <li><a href="https://ro-vini.github.io" target="_blank">Vinícius Eduardo Roveri</a></li>
+            <li><a href="https://github.com/BrunoAlBosso/CurriculoDevFrameworkIII" target="_blank">Bruno Alessandro Bosso Alves</a></li>
+            <li><a href="https://leomartelli.github.io/curriculoframework3/" target="_blank">Leonardo Martelli</a></li>
+            <li><a href="https://fdestro.vercel.app/" target="_blank">Felipe Destro</a></li>
+            <li><a href="https://lucasmarujo.github.io/curriculo_14-02-25/" target="_blank">Lucas Marujo Amadeu</a></li>
+            <li><a href="https://www.giovannivicentin.com" target="_blank">Giovanni Vicentin</a></li>
+            <li><a href="ryancabral1.github.io" target="_blank">Ryan Augusto Cabral</a></li>
+            <li><a href="https://felipecruz12.github.io/" target="_blank">Felipe Matheus da Cruz</a></li>
+            <li><a href="https://martinsrossi.github.io" target="_blank">Renan Rossi</a></li>
+            <li><a href="https://rossze.github.io/NicolasPage/" target="_blank">Nicolas Rossetto Samblas</a></li>
+            <li><a href="https://caiohfcorreia.github.io/" target="_blank">Caio Henrique Fernande Correia</a></li>
+            <li><a href="https://portfolio-website-three-silk.vercel.app" target="_blank">Lucas Vilela Roveri</a></li>
+            <li><a href="https://mathdalabi.github.io/curriculo/curriculo.html" target="_blank">Matheus Henrique Melo Lima</a></li>
+            <li><a href="https://camilauniversidade.github.io/curriculo.github.io/" target="_blank">Camila Vieira Francatti</a></li>
+            <li><a href="https://github.com/Naubert-Batista/curriculo/blob/Beta/index.html" target="_blank">Naubert Batista de Lima</a></li>
+            <li><a href="https://rafael-h-souza.github.io/curriculo.github.io/" target="_blank">Rafael Souza</a></li>
+        </ul>
+    </div>
+
+    <footer id="footer" class="footer">
+        <p>© Copyright 2025 Desenvolvido por alunos do Unianchieta</p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            const footer = document.getElementById('footer');
+            const scrollPosition = window.innerHeight + window.scrollY;
+            const documentHeight = document.documentElement.offsetHeight;
+
+            // Se o usuário chegar ao final da página, mostramos o footer
+            if (scrollPosition >= documentHeight) {
+                footer.style.opacity = 1;
+                footer.style.visibility = 'visible';
+            } else {
+                footer.style.opacity = 0;
+                footer.style.visibility = 'hidden';
+            }
+        };
+    </script>
 </body>
 </html>
